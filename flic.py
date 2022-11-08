@@ -8,4 +8,4 @@ extras='url_l'
 cats = flickr.photos.search(text='kitten', per_page=1, extras=extras)
 photos = cats['photos']
 for photo in photos:
-    print(photo)
+    print(photo['page'])
