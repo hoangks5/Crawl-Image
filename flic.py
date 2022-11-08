@@ -7,5 +7,6 @@ flickr = FlickrAPI(FLICKR_PUBLIC, FLICKR_SECRET, format='parsed-json')
 extras='url_l'
 cats = flickr.photos.search(text='kitten', per_page=1, extras=extras)
 photos = cats['photos']
-from pprint import pprint
+for photo in photos:
+    photo['photo']['url_l']
 pprint(photos)
