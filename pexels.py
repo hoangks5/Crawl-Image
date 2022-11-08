@@ -9,5 +9,6 @@ api.search('kitten', page=1, results_per_page=1000)
 # Get photo entries
 photos = api.get_entries()
 # Loop the five photos
+list = []
 for photo in photos:
-  print('Photo original size: ', photo.original)
+  list.append(photo.original)
