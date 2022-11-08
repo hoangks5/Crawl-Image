@@ -1,7 +1,7 @@
 # Import API class from pexels_api package
 from pexels_api import API
 # Type your Pexels API
-PEXELS_API_KEY = 'YOUR-PEXELS-API-KEY'
+PEXELS_API_KEY = '563492ad6f91700001000001c6decedb146c4053a03e0b07bee17e8b'
 # Create API object
 api = API(PEXELS_API_KEY)
 # Search five 'kitten' photos
