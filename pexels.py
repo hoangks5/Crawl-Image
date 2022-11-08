@@ -12,3 +12,4 @@ photos = api.get_entries()
 list = []
 for photo in photos:
   list.append(photo.original)
+string = '\n'.join(list)
