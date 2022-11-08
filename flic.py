@@ -1,4 +1,4 @@
-from flickr import FlickrAPI
+from flic import FlickrAPI
 
 FLICKR_PUBLIC = '466c4c31e82b8739e5b07b5798a19129'
 FLICKR_SECRET = 'f854572f81ad7c8a'
