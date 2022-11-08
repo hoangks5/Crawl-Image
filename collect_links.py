@@ -155,10 +155,6 @@ class CollectLinks:
                 print('[Exception occurred while collecting links from google] {}'.format(e))
 
         links = self.remove_duplicates(links)
-        with open('log.txt','w',encoding='utf-8') as f:
-            string = '\n'.join(links)
-            f.write(string)
-            f.close()
         print('Collect links done. Site: {}, Keyword: {}, Total: {}'.format('google', keyword, len(links)))
         self.browser.close()
 
