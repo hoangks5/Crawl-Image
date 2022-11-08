@@ -6,7 +6,7 @@ PEXELS_API_KEY = '563492ad6f91700001000001c6decedb146c4053a03e0b07bee17e8b'
 api = API(PEXELS_API_KEY)
 list = []
 # Search five 'kitten' photos
-for i in range(1,10,1):
+for i in range(1,50,1):
     api.search('kitten', page=i, results_per_page=80)
     # Get photo entries
     photos = api.get_entries()
