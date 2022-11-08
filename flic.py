@@ -12,9 +12,9 @@ cats = flickr.photos.search(text='kitten', per_page=100, extras=extras)
 photos = cats['photos']['photo']
 list = []
 for photo in photos:
-    for i in range(0,len(extras),1):
+    for i in range(0,len(extra),1):
         try:
-            list.append(photo[extras[i]])
+            list.append(photo[extra[i]])
             break
         except:
             pass
