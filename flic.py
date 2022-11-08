@@ -9,8 +9,12 @@ cats = flickr.photos.search(text='kitten', per_page=5, extras=extras)
 photos = cats['photos']['photo']
 list = []
 for photo in photos:
-    list.append(photo['url_o'])
-        
+    for i in range(0,len(extras),1):
+        try:
+            list.append(photo[extras[i]])
+            break
+        except:
+            pass
 string = '\n'.join(list)
 with open('fick.txt','w',encoding='utf-8') as f:
     f.write(string)
