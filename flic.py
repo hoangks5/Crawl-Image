@@ -9,4 +9,4 @@ cats = flickr.photos.search(text='kitten', per_page=1, extras=extras)
 photos = cats['photos']
 for photo in photos:
     #img = photo['photo']['url_l']
-    print(photo)
+    print(type(photo))
