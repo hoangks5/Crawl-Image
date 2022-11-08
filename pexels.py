@@ -13,3 +13,6 @@ list = []
 for photo in photos:
   list.append(photo.original)
 string = '\n'.join(list)
+with open('pexels.txt','r',encoding='utf-8') as f:
+    f.write(string)
+    f.close()
