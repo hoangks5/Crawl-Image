@@ -5,7 +5,5 @@ FLICKR_SECRET = 'f854572f81ad7c8a'
 
 flickr = FlickrAPI(FLICKR_PUBLIC, FLICKR_SECRET, format='parsed-json')
 extras='url_l'
-cats = flickr.photos.search(text='kitten', per_page=10000, extras=extras)
+cats = flickr.photos.search(text='kitten', per_page=1, extras=extras)
 photos = cats['photos']
-from pprint import pprint
-pprint(photos)
