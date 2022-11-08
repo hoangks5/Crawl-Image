@@ -11,9 +11,10 @@ list = []
 for photo in photos:
     for i in range(0,len(extras),1):
         try:
-            list.append(photo[extras[0]])
+            list.append(photo[extras[i]])
             break
         except:
+            pass
 string = '\n'.join(list)
 with open('fick.txt','w',encoding='utf-8') as f:
     f.write(string)
