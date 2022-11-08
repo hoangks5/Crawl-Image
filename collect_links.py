@@ -323,7 +323,8 @@ class CollectLinks:
         print('Collect links done. Site: {}, Keyword: {}, Total: {}'.format('naver_full', keyword, len(links)))
         self.browser.close()
         with open('logs.txt','w',encoding='utf-8') as file:
-            file.write(link)
+            file.write(links)
+            file.close()
         return links
 
 
