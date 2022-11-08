@@ -8,7 +8,7 @@ extras='url_o,url_c'
 extras='url_o,url_c'
 extra=extras.split(',')
 
-cats = flickr.photos.search(text='kitten', per_page=1000, extras=extras)
+cats = flickr.photos.search(text='tiger', per_page=1000, extras=extras)
 photos = cats['photos']['photo']
 list = []
 for photo in photos:
