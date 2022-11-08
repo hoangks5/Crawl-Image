@@ -10,9 +10,4 @@ api.search('kitten', page=1, results_per_page=100)
 photos = api.get_entries()
 # Loop the five photos
 for photo in photos:
-  # Print photographer
-  print('Photographer: ', photo.photographer)
-  # Print url
-  print('Photo url: ', photo.url)
-  # Print original size url
   print('Photo original size: ', photo.original)
