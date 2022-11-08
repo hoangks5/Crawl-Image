@@ -11,7 +11,7 @@ list = []
 for photo in photos:
     n = len(extras)
     try:
-        list.append(photo['url_m'])
+        list.append(photo[extras=])
     except:
 string = '\n'.join(list)
 with open('fick.txt','w',encoding='utf-8') as f:
