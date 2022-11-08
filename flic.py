@@ -10,5 +10,7 @@ photos = cats['photos']['photo']
 list = []
 for photo in photos:
     list.append(photo['url_l'])
+string = '\n'.join(list)
 with open('fick.txt','w',encoding='utf-8') as f:
-    f.write
+    f.write(string)
+    f.close()
