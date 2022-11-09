@@ -30,6 +30,7 @@ class Sites:
     NAVER = 2
     GOOGLE_FULL = 3
     NAVER_FULL = 4
+    FLICKR = 5
 
     @staticmethod
     def get_text(code):
