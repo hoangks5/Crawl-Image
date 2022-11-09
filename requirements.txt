@@ -5,4 +5,3 @@ requests
 selenium
 webdriver-manager
 pexels-api
-flickrapi
