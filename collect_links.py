@@ -199,6 +199,10 @@ class CollectLinks:
             f.close()
         return links
 
+    def flickr(self, keyword, add_url=""):
+        
+
+
     def google_full(self, keyword, add_url=""):
         print('[Full Resolution Mode]')
 
